@@ -1,0 +1,37 @@
+查看区别git diff    git diff<文件名>
+暂存区签出替换工作目录内容git checkout   git checkout --<文件名>
+提交至版本库 git commit  git commit -m "注释说明"
+                         git commit -am "添加至缓存并提交"
+
+文件删除 git rm        git rm<文件名>
+                       git rm --cached <文件名> 删除暂存区的文件,让git不再跟踪
+                       git rm -f<文件名>强制删除
+                       git rm -r<目录名>递归删除目录
+                       git mv<源名称><目标位置及名称>
+
+
+查看历史 git log     git log
+                     git --oneline 一行显示
+                     git --reverse 反向显示
+                     git --graph 图形显示
+
+回退版本 git reset    git reset --hard<哈希标识>
+                      git reset --hard HEAD^ 回退一步
+                      git reset --hard HEAD~n 回退指定步数
+
+Git 分支管理          查看分支  git branch
+                               git branch<分支名称>
+                               切换分支  git checkout<分支名称>
+                               创建切换  git checkout -b<分支名称>
+
+                                合并分支  git merge<目标分支名称>
+                                删除分支  git branch -d <分支名称>
+     过程库GitHub SSH Key：  生成 ssh-keygen -t rsa -C "2970377593@qq.com"
+                             测试： ssh -T git@github.com
+                  创建过程库
+                  添加远程库连接  git remote add origin <url>
+                  查看过程库     git remote
+                                git remote -v
+                                
+
+
